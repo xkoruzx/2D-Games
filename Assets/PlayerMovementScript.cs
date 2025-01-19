@@ -116,4 +116,8 @@ public class PlayerMovementScript : MonoBehaviour
         return raycastHit.collider != null;
    }
     
+    public bool canAttack()
+    {
+        return horizontalInput == 0 && isGrounded() && !onWall();
+    } 
 }
