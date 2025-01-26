@@ -7,7 +7,7 @@ public class PlayerMovementScript : MonoBehaviour
    [SerializeField] private float jumpPower;
    [SerializeField] private LayerMask groundLayer;
    [SerializeField] private LayerMask wallLayer;
-   private Rigidbody2D body;
+   [SerializeField] private Rigidbody2D body;
 
    private Animator animator;
 
