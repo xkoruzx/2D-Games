@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class EnemyMove : MonoBehaviour
 {
     [SerializeField] private float movementDistance;
