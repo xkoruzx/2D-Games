@@ -52,7 +52,7 @@ public class EnemyMove : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // collision.GetComponent<Health>().TakeDamage(damage);
+            collision.GetComponent<Health>().TakeDamage(damage);
         }
     }
 }
