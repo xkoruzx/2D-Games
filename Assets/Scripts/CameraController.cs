@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     private void Update()
     {
         //Room Camera
-        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z), ref velocity, speed);
+        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX - 1, transform.position.y, transform.position.z), ref velocity, speed);
 
         //follow player (For Nanon)
         // transform.position = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z);
@@ -27,6 +27,6 @@ public class CameraController : MonoBehaviour
 
     public void MoveToNewRoom(Transform _newRoom)
     {
-        currentPosX = _newRoom.position.x;
+        currentPosX = _newRoom.position.x  - 1;
     }
 }
